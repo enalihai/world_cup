@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get '/leagues/:id', to: 'leagues#show'
   post '/leagues', to: 'leagues#create'
   get '/leagues/:id/edit', to: 'leagues#edit'
+  patch '/leagues/:id', to: 'leagues#update'
 end
