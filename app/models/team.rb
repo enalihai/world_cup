@@ -1,3 +1,3 @@
 class Team < ApplicationRecord
-
-end 
+  belongs_to :league
+end
