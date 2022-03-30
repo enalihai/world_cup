@@ -1,0 +1,4 @@
+<%  @teams.each do |team| %>
+  <%= link_to team.country, "/teams/#{team.id}" %>
+<% end %>
+<p>Average FIFA Rank for <%= @league.name %>: <%= @league.average_fifa_rank %></p>
