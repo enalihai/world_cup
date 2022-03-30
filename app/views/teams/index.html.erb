@@ -1,0 +1,6 @@
+<h1>National Teams</h1>
+<% @teams.each do |team| %>
+  <h3><%= team.country %></h3>
+  <p>FIFA Rank: <%= team.rank %></p>
+  <p>WC Qualified: <%= team.qualified %> </p>
+<% end %>
