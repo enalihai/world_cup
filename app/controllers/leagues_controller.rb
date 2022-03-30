@@ -11,7 +11,14 @@ class LeaguesController < ApplicationController
   end
 
   def create
-    league = League.create(name: params[:name])
+    league = League.create(league_params)
     redirect_to "/leagues"
+  end
+
+  def edit
+  end 
+
+  def league_params
+    params.permit(:name)
   end
 end
