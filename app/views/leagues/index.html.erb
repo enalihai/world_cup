@@ -1,5 +1,5 @@
-<%= link_to "New League", "/leagues/new" %>
 <h1>World Cup Leagues</h1>
 <% @leagues.each do |league| %>
-  <h3><%= league.name %></h3>
+  <h3><%= league.name %>  <%= button_to "Edit #{league.name}", "/leagues/#{league.id}/edit", method: :get %></h3>
 <% end %>
+<%= link_to "New League", "/leagues/new" %>
