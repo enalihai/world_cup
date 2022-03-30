@@ -8,6 +8,10 @@ class LeaguesController < ApplicationController
   end
 
   def new
+  end
 
+  def create
+    league = League.create(name: params[:name])
+    redirect_to "/leagues"
   end
 end
